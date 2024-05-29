@@ -10,8 +10,6 @@ import UIKit
 
 class MyCustomCell: UITableViewCell {
 
-
-
     let button: UIButton = {
         let button = UIButton()
         button.backgroundColor = .systemPink
@@ -68,6 +66,8 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        print("pull request sent")
         view.addSubview(tableView)
         tableView.dataSource = self
         tableView.frame = view.bounds
